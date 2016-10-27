@@ -19,7 +19,7 @@ class WebViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // スクロールを有効にする
-        webView.scrollView.contentOffset.y = 200
+        webView.scrollView.contentOffset.y = 0
         webView.scrollView.isScrollEnabled = true
         
         // webViewに表示する
