@@ -12,8 +12,7 @@ class WebViewController: UIViewController {
     // WebView
     @IBOutlet weak var webView: UIWebView!
     // index.htmlの公開URL
-//    let url = "YOUR_HTML_PUBLIC_URL"
-    let url = "https://google.com"
+    let url = "YOUR_HTML_PUBLIC_URL"
     
     override func viewDidLoad() {
         super.viewDidLoad()
