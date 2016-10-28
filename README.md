@@ -1,9 +1,9 @@
-# 【iOS10対応 Swift】 mBaaSでWebサーバーとして使ってみよう！
+# 【iOS10対応 Swift】 mBaaSをWebサーバーとして使ってみよう！
 _2016/10/27作成_
 ![画像1](/readme-img/001.png)
 
 ## 概要
-* [ ニフティクラウドmobile backend ](http://mb.cloud.nifty.com/)の『ファイルストア機能』をWebサーバーとして利用することで、作成したWebページを、アプリ内WebViewで表示するサンプルプロジェクトです。
+* [ ニフティクラウドmobile backend ](http://mb.cloud.nifty.com/)の『ファイルストア機能』をWebサーバーとして利用し、保存したWebページを、アプリ内WebViewで表示するサンプルプロジェクトです。
 * 簡単な操作ですぐに [ ニフティクラウドmobile backend ](http://mb.cloud.nifty.com/)の機能を体験いただけます★☆
 
 ##  ニフティクラウドmobile backend って何？？
@@ -32,7 +32,6 @@ _2016/10/27作成_
  * **参考** ：APIキーはXcodeで作成するアプリに[ ニフティクラウドmobile backend ](http://mb.cloud.nifty.com/)を紐付けるために使用します。アプリ内でmBaaSを使用する場合には必ず必要になるものですが、今回のサンプルアプリでは使用しません。
 
 ### 2. GitHubからサンプルプロジェクトのダウンロード
-
 * 下記リンクをクリックしてプロジェクトをMacにダウンロードします
  * __[SwiftWebViewApp](https://github.com/natsumo/SwiftWebViewApp/archive/master.zip)__
 
@@ -55,7 +54,7 @@ _2016/10/27作成_
 
 * アップロードされたことを確認します
  * 順番は違っていてもOKです！
-* アップロードした「index.html」ファイルをクリックします
+* アップロードした「`index.html`」ファイルをクリックします
 * 初期状態では「公開ファイルURL」が「無効」に設定されていますので、有効に設定する必要があります
 * 「アプリ設定」をクリックします
 
@@ -65,7 +64,7 @@ _2016/10/27作成_
 
 ![画像7](/readme-img/007.png)
 
-* 再び「ファイルストア」に戻り、「index.html」をクリックします
+* 再び「ファイルストア」に戻り、「`index.html`」をクリックします
 * 「公開ファイルURL」が作成されていることが確認できます
 
 ![画像8](/readme-img/008.png)
@@ -75,13 +74,13 @@ _2016/10/27作成_
  * 「公開ファイルURL」は後ほど使用します
 
 ### 4. Xcodeでアプリを起動
-* ダウンロードしたフォルダを開き、「SwiftPayloadApp.xcodeproj」をダブルクリックしてXcode開きます
+* ダウンロードしたフォルダを開き、「`SwiftWebViewApp.xcodeproj`」をダブルクリックしてXcode開きます
 
 ![画像9](/readme-img/009.png)
 
 ### 5. 公開ファイルURLの設定
 * `WebViewController.swift`を編集します
-* 先程[ ニフティクラウドmobile backend ](http://mb.cloud.nifty.com/)のダッシュボード上で確認したindex.htmlファイルの「公開ファイルURL」を貼り付けます
+* 先程[ ニフティクラウドmobile backend ](http://mb.cloud.nifty.com/)のダッシュボード上で確認した`index.html`ファイルの「公開ファイルURL」を貼り付けます
 
 ![画像10](/readme-img/010.png)
 
@@ -105,10 +104,10 @@ https://mb.api.cloud.nifty.com/2013-09-01/applications/**APPLICATION_ID**/public
 ```
 
 ### サンプルWebページについて
-今回は`index.html`に２つの画像（`mb.png`, `mb_information.ong`）を表示する形式で簡易的に作成していますが、JavaScript（jsファイル）を作成しファイルストアに保存んすることで、同様にして`index.html`にスクリプトを埋め込むことも可能です。
+今回は`index.html`に２つの画像（`mb.png`, `mb_information.png`）を表示する形式で簡易的に作成していますが、JavaScript（`js`ファイル）を作成しファイルストアに保存んすることで、`index.html`にスクリプトを埋め込むことも可能です。
 
 ### サンプルアプリについて
-WebViewの標示は、`WebViewController.swift`に記述しています
+WebViewの表示は、`WebViewController.swift`に記述しています
 
 ```swift
 //
