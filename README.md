@@ -110,13 +110,6 @@ https://mb.api.cloud.nifty.com/2013-09-01/applications/**APPLICATION_ID**/public
 WebViewの表示は、`WebViewController.swift`に記述しています
 
 ```swift
-//
-//  WebViewController.swift
-//  SwiftWebViewApp
-//
-//  Created by Natsumo Ikeda on 2016/10/25.
-//  Copyright © 2016年 NIFTY Corporation. All rights reserved.
-//
 import UIKit
 
 class WebViewController: UIViewController {
