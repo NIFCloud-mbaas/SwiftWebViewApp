@@ -95,7 +95,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = "NIFCLOUD Corporation";
+				ORGANIZATIONNAME = "FUJITSU CLOUD TECHNOLOGIES LIMITED";
 				TargetAttributes = {
 					BD14D65F1DBDFED10002127D = {
 						CreatedOnToolsVersion = 8.0;
