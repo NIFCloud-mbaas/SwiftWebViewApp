@@ -33,7 +33,7 @@ _2016/10/27作成_
 
 ### 2. GitHubからサンプルプロジェクトのダウンロード
 * 下記リンクをクリックしてプロジェクトをMacにダウンロードします
- * __[SwiftWebViewApp](https://github.com/natsumo/SwiftWebViewApp/archive/master.zip)__
+ * __[SwiftWebViewApp](https://github.com/NIFCloud-mbaas/SwiftWebViewApp/archive/master.zip)__
 
 ### 3. Webページの公開ファイルURLを作成する
 * 2.でダウンロードしたプロジェクトに「setting」フォルダがあります
@@ -100,7 +100,7 @@ _2016/10/27作成_
 公開ファイルURLは次のような構造になっています
 
 ```
-https://mb.api.cloud.nifty.com/2013-09-01/applications/**APPLICATION_ID**/publicFiles/**fileName**
+https://mbaas.api.nifcloud.com/2013-09-01/applications/**APPLICATION_ID**/publicFiles/**fileName**
 ```
 
 ### サンプルWebページについて
