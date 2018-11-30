@@ -22,7 +22,7 @@ class WebViewController: UIViewController {
         
         // webViewに表示する
         let nsurl = NSURL(string: url)
-        let request = NSURLRequest(url: nsurl as! URL)
+        let request = NSURLRequest(url: nsurl! as URL)
         self.webView.loadRequest(request as URLRequest)
     }
 
