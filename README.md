@@ -3,37 +3,36 @@ _2016/10/27作成_
 ![画像1](/readme-img/001.png)
 
 ## 概要
-* [ ニフティクラウドmobile backend ](http://mb.cloud.nifty.com/)の『ファイルストア機能』をWebサーバーとして利用し、保存したWebページを、アプリ内WebViewで表示するサンプルプロジェクトです。
-* 簡単な操作ですぐに [ ニフティクラウドmobile backend ](http://mb.cloud.nifty.com/)の機能を体験いただけます★☆
+* [ ニフクラmobile backend ](https://mbaas.nifcloud.com/)の『ファイルストア機能』をWebサーバーとして利用し、保存したWebページを、アプリ内WebViewで表示するサンプルプロジェクトです。
+* 簡単な操作ですぐに [ ニフクラmobile backend ](https://mbaas.nifcloud.com/)の機能を体験いただけます★☆
 
-##  ニフティクラウドmobile backend って何？？
+##  ニフクラmobile backend って何？？
 スマートフォンアプリのバックエンド機能（プッシュ通知・データストア・会員管理・ファイルストア・SNS連携・位置情報検索・スクリプト）が**開発不要**、しかも基本**無料**(注1)で使えるクラウドサービス！
 
-注1：詳しくは[こちら](http://mb.cloud.nifty.com/price.htm)をご覧ください
+注1：詳しくは[こちら](https://mbaas.nifcloud.com/function.htm)をご覧ください
 
 ![画像2](/readme-img/002.png)
 
 ## 動作環境
-* Mac OS X 10.12(Sierra)
-* Xcode ver. 8.0
-* Simulator ver. 10.0
- * iPhone7
+* Mac OS X 10.14.4(Mojave)
+* Xcode ver. 11.2
+* iPhone6 ver. 12.1.4
 
 ※上記内容で動作確認をしています。
 
 ## 手順
-### 1. [ ニフティクラウドmobile backend ](http://mb.cloud.nifty.com/)の会員登録・ログインとアプリの新規作成
+### 1. [ ニフクラmobile backend ](https://mbaas.nifcloud.com/)の会員登録・ログインとアプリの新規作成
 * 上記リンクから会員登録（無料）をします。登録ができたらログインをすると下図のように「アプリの新規作成」画面が出るのでアプリを作成します
 
 ![画像3](/readme-img/003.png)
 
 * アプリ作成されるとAPIキー（アプリケーションキーとクライアントキー）が発行されます
 * 「OK」をクリックします
- * **参考** ：APIキーはXcodeで作成するアプリに[ ニフティクラウドmobile backend ](http://mb.cloud.nifty.com/)を紐付けるために使用します。アプリ内でmBaaSを使用する場合には必ず必要になるものですが、今回のサンプルアプリでは使用しません。
+ * **参考** ：APIキーはXcodeで作成するアプリに[ ニフクラmobile backend ](https://mbaas.nifcloud.com/)を紐付けるために使用します。アプリ内でmBaaSを使用する場合には必ず必要になるものですが、今回のサンプルアプリでは使用しません。
 
 ### 2. GitHubからサンプルプロジェクトのダウンロード
 * 下記リンクをクリックしてプロジェクトをMacにダウンロードします
- * __[SwiftWebViewApp](https://github.com/natsumo/SwiftWebViewApp/archive/master.zip)__
+ * __[SwiftWebViewApp](https://github.com/NIFCLOUD-mbaas/SwiftWebViewApp/archive/master.zip)__
 
 ### 3. Webページの公開ファイルURLを作成する
 * 2.でダウンロードしたプロジェクトに「setting」フォルダがあります
@@ -42,7 +41,7 @@ _2016/10/27作成_
  * `mb.png`
  * `mb_function.png`
 
-* この３点のファイルを[ ニフティクラウドmobile backend ](http://mb.cloud.nifty.com/)の「ファイルストア」にアップロードします
+* この３点のファイルを[ ニフクラmobile backend ](https://mbaas.nifcloud.com/)の「ファイルストア」にアップロードします
 * ダッシュボードを開き、「ファイルストア」＞「↑アップロード」をクリックします
 
 ![画像4](/readme-img/004.png)
@@ -80,7 +79,7 @@ _2016/10/27作成_
 
 ### 5. 公開ファイルURLの設定
 * `WebViewController.swift`を編集します
-* 先程[ ニフティクラウドmobile backend ](http://mb.cloud.nifty.com/)のダッシュボード上で確認した`index.html`ファイルの「公開ファイルURL」を貼り付けます
+* 先程[ ニフクラmobile backend ](https://mbaas.nifcloud.com/)のダッシュボード上で確認した`index.html`ファイルの「公開ファイルURL」を貼り付けます
 
 ![画像10](/readme-img/010.png)
 
@@ -134,4 +133,4 @@ class WebViewController: UIViewController {
 
 ## 参考
 * 同じ内容の【Objective-C】版もご用意しています
- * https://github.com/NIFTYCloud-mbaas/ObjcWebViewApp
+ * https://github.com/NIFCLOUD-mbaas/ObjcWebViewApp
