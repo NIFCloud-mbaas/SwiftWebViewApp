@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		485A9B28262810B300AE5B55 /* SwiftWebViewAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A9B27262810B300AE5B55 /* SwiftWebViewAppUITests.swift */; };
 		BD14D6641DBDFED20002127D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD14D6631DBDFED20002127D /* AppDelegate.swift */; };
 		BD14D6661DBDFED20002127D /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD14D6651DBDFED20002127D /* InformationViewController.swift */; };
 		BD14D6691DBDFED20002127D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD14D6671DBDFED20002127D /* Main.storyboard */; };
@@ -15,7 +16,20 @@
 		BDB4443C1DBEE0D0007CD26C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB4443B1DBEE0D0007CD26C /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		485A9B2A262810B300AE5B55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD14D6581DBDFED10002127D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD14D65F1DBDFED10002127D;
+			remoteInfo = SwiftWebViewApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		485A9B25262810B300AE5B55 /* SwiftWebViewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftWebViewAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		485A9B27262810B300AE5B55 /* SwiftWebViewAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWebViewAppUITests.swift; sourceTree = "<group>"; };
+		485A9B29262810B300AE5B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD14D6601DBDFED20002127D /* SwiftWebViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWebViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD14D6631DBDFED20002127D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD14D6651DBDFED20002127D /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		485A9B22262810B300AE5B55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD14D65D1DBDFED10002127D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		485A9B26262810B300AE5B55 /* SwiftWebViewAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				485A9B27262810B300AE5B55 /* SwiftWebViewAppUITests.swift */,
+				485A9B29262810B300AE5B55 /* Info.plist */,
+			);
+			path = SwiftWebViewAppUITests;
+			sourceTree = "<group>";
+		};
 		BD14D6571DBDFED10002127D = {
 			isa = PBXGroup;
 			children = (
 				BD14D6621DBDFED20002127D /* SwiftWebViewApp */,
+				485A9B26262810B300AE5B55 /* SwiftWebViewAppUITests */,
 				BD14D6611DBDFED20002127D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				BD14D6601DBDFED20002127D /* SwiftWebViewApp.app */,
+				485A9B25262810B300AE5B55 /* SwiftWebViewAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +102,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		485A9B24262810B300AE5B55 /* SwiftWebViewAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 485A9B2E262810B300AE5B55 /* Build configuration list for PBXNativeTarget "SwiftWebViewAppUITests" */;
+			buildPhases = (
+				485A9B21262810B300AE5B55 /* Sources */,
+				485A9B22262810B300AE5B55 /* Frameworks */,
+				485A9B23262810B300AE5B55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				485A9B2B262810B300AE5B55 /* PBXTargetDependency */,
+			);
+			name = SwiftWebViewAppUITests;
+			productName = SwiftWebViewAppUITests;
+			productReference = 485A9B25262810B300AE5B55 /* SwiftWebViewAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		BD14D65F1DBDFED10002127D /* SwiftWebViewApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD14D6721DBDFED20002127D /* Build configuration list for PBXNativeTarget "SwiftWebViewApp" */;
@@ -93,10 +143,15 @@
 		BD14D6581DBDFED10002127D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "NIFTY Corporation";
 				TargetAttributes = {
+					485A9B24262810B300AE5B55 = {
+						CreatedOnToolsVersion = 12.4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BD14D65F1DBDFED10002127D;
+					};
 					BD14D65F1DBDFED10002127D = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
@@ -108,6 +163,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -117,11 +173,19 @@
 			projectRoot = "";
 			targets = (
 				BD14D65F1DBDFED10002127D /* SwiftWebViewApp */,
+				485A9B24262810B300AE5B55 /* SwiftWebViewAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		485A9B23262810B300AE5B55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD14D65E1DBDFED10002127D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,6 +199,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		485A9B21262810B300AE5B55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485A9B28262810B300AE5B55 /* SwiftWebViewAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD14D65C1DBDFED10002127D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +218,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		485A9B2B262810B300AE5B55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD14D65F1DBDFED10002127D /* SwiftWebViewApp */;
+			targetProxy = 485A9B2A262810B300AE5B55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BD14D6671DBDFED20002127D /* Main.storyboard */ = {
@@ -167,6 +247,69 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		485A9B2C262810B300AE5B55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SwiftWebViewAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = asia.vitalify.SwiftWebViewAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftWebViewApp;
+			};
+			name = Debug;
+		};
+		485A9B2D262810B300AE5B55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SwiftWebViewAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = asia.vitalify.SwiftWebViewAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftWebViewApp;
+			};
+			name = Release;
+		};
 		BD14D6701DBDFED20002127D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -287,6 +430,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		485A9B2E262810B300AE5B55 /* Build configuration list for PBXNativeTarget "SwiftWebViewAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485A9B2C262810B300AE5B55 /* Debug */,
+				485A9B2D262810B300AE5B55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BD14D65B1DBDFED10002127D /* Build configuration list for PBXProject "SwiftWebViewApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
